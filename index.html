@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
-  <body class="w-[100vw] h-[100vh]">
+  <body>
     <script>
       const apiMeal = ["Maryline", "Thomas", "Tanguy", "Jérémy V", "Jérémy F", "Quentin", "Tien", "Pierre"];
       const annonceList = ["Le hasard a désigné", "C'est ainsi que le sort désigne", "Tous les regards se posent sur", "Hats down for", "C'est ton tour", "A toi de jouer", "Surprends-nous"]
@@ -19,6 +19,8 @@
         alert (`${annonceList[randomAnnonce]} ${apiMeal[randomIndex]}.`)
       }
     </script>
-    <button onclick="onclick, random(apiMeal.length, annonceList.length)" class="margin-x-auto">Jeter une pièce en l'air !</button>
+    <div class="w-[100vw] h-[100vh]">
+      <button onclick="onclick, random(apiMeal.length, annonceList.length)" class="mx-auto">Jeter une pièce en l'air !</button>
+    </div>
   </body>
 </html>
