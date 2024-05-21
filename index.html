@@ -9,7 +9,7 @@
   <body>
     
     <div class="w-[100vw] h-[100vh] flex items-center justify-center bg-[#edf6f9]">
-      <button id="random-button" class="bg-[#83c5be] border-black rounded-xl text-black font-bold hover:text-[#e29578] p-2 hover:bg-[#006d77] hover:ring-2 hover:ring-offset-2 hover:ring-[#006d77] ring-transparent">Jeter une pièce en l'air !</button>
+      <button id="random-button" onclick="onclick, random(apiMeal.length, annonceList.length)" class="bg-[#83c5be] border-black rounded-xl text-black font-bold hover:text-[#e29578] p-2 hover:bg-[#006d77] hover:ring-2 hover:ring-offset-2 hover:ring-[#006d77] ring-transparent">Jeter une pièce en l'air !</button>
     </div>
     <script>
       const apiMeal = ["Maryline", "Thomas", "Tanguy", "Jérémy V", "Jérémy F", "Quentin", "Tien", "Pierre"];
@@ -23,8 +23,6 @@
         console.log(randomAnnonce);
         alert (`${annonceList[randomAnnonce]} ${apiMeal[randomIndex]}.`)
       }
-
-      randomBtn.addEventListener("click", random(apiMeal.length, annonceList.length))
     </script>
   </body>
 </html>
