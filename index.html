@@ -7,6 +7,10 @@
     <title>Document</title>
   </head>
   <body>
+    
+    <div class="w-[100vw] h-[100vh] flex items-center justify-center bg-[#edf6f9]">
+      <button id="random-button" class="bg-[#83c5be] border-black rounded-xl text-black font-bold hover:text-[#e29578] p-2 hover:bg-[#006d77] hover:ring-2 hover:ring-offset-2 hover:ring-[#006d77] ring-transparent">Jeter une pièce en l'air !</button>
+    </div>
     <script>
       const apiMeal = ["Maryline", "Thomas", "Tanguy", "Jérémy V", "Jérémy F", "Quentin", "Tien", "Pierre"];
       const annonceList = ["Le hasard a désigné", "C'est ainsi que le sort désigne", "Tous les regards se posent sur", "Hats down for", "C'est ton tour", "A toi de jouer", "Surprends-nous"];
@@ -22,8 +26,5 @@
 
       randomBtn.addEventListener("click", random(apiMeal.length, annonceList.length))
     </script>
-    <div class="w-[100vw] h-[100vh] flex items-center justify-center bg-[#edf6f9]">
-      <button id="random-button" class="bg-[#83c5be] border-black rounded-xl text-black font-bold hover:text-[#e29578] p-2 hover:bg-[#006d77] hover:ring-2 hover:ring-offset-2 hover:ring-[#006d77] ring-transparent">Jeter une pièce en l'air !</button>
-    </div>
   </body>
 </html>
