@@ -7,7 +7,8 @@ const random = (formation, annonce) => {
   console.log(randomIndex);
   const randomAnnonce = Math.floor(Math.random()*annonce);
   console.log(randomAnnonce);
-  alert (`${annonceList[randomAnnonce]} ${apiMeal[randomIndex]}.`)
+  alert (`${annonceList[randomAnnonce]} ${apiMeal[randomIndex]}.`);
+  return
  }
 
 
