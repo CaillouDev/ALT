@@ -13,4 +13,4 @@ function random () {
   return
  }
 
-randomBtn.addEventListener("click", () => random);
+randomBtn.addEventListener("click", random);
