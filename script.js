@@ -13,4 +13,4 @@ function random (formation, annonce) {
   return
  }
 
-randomBtn.addEventListener("click", random(apiMeal.length, annonceList.length));
+randomBtn.addEventListener("click", () => random(apiMeal.length, annonceList.length));
